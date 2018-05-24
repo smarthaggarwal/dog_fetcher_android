@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d35400"
+    tools:context="com.rksn.smarth.dogFetcher.MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Image"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/btnGetData"
+                android:textColor="#27ae60"
+                android:background="#f1c40f"/>
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGetData">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:padding="5dp"-->
+            <!--android:textSize="24sp"-->
+            <!--android:hint="Fetched data."-->
+            <!--android:id="@+id/txtVw"/>-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:id="@+id/imgVW"/>
+        </ScrollView>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:hint="Fetched data."
+                android:id="@+id/txtVw"
+                android:text="API Provided by(Dog-CEO): https://dog.ceo/dog-api/ "
+                android:textColor="#2c3e50"
+                android:background="#95a5a6"
+                android:editable="false"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+</RelativeLayout>
